@@ -5,93 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sí mira arriba</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <!-- Meta -->
-  <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
-  <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
-  <meta property="og:image" content="https://www.shutterstock.com/image-vector/girl-hugs-planet-earth-love-600nw-1952231440.jpg" />
-  <meta property="og:url" content="https://si-mira-arriba.vercel.app/" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Campaña ambiental Sí mira arriba. Toma acción por el planeta hoy." />
+  <meta property="og:title" content="Sí mira arriba" />
+  <meta property="og:description" content="Campaña por el medio ambiente. Acciones que marcan la diferencia." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb" />
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">🌍 Sí mira arriba</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="#video" class="nav-btn">🎥 Video</a></li>
-        <li><a href="#acciones" class="nav-btn">🌿 Acciones</a></li>
-        <li><a href="#contacto" class="nav-btn">📬 Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 Sí mira arriba</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#video" class="nav-btn">🎥 Video</a></li>
+      <li><a href="#acciones" class="nav-btn">🌿 Acciones</a></li>
+      <li><a href="#contacto" class="nav-btn">📬 Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1>Sí mira arriba 🌍</h1>
-      <p>El futuro está en el aire… y en tus manos.</p>
-      <a href="#video" class="btn">Ver video</a>
+      <h1>Sí mira arriba</h1>
+      <p>El planeta nos necesita. Es momento de actuar. Descubre cómo tú puedes marcar la diferencia.</p>
+      <a href="#acciones" class="btn">Ver acciones</a>
     </div>
-  </header>
+  </section>
 
+  <!-- Video -->
   <main>
-
-    <section class="about">
-      <h2>¿Por qué mirar arriba?</h2>
-      <p>
-        Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática. 
-        Mientras muchos prefieren ignorar el problema, nosotros elegimos mirar arriba y actuar por el futuro del planeta.
-      </p>
-    </section>
-
-    <section class="video" id="video">
-      <h2>🎥 Video de la campaña</h2>
+    <section id="video">
+      <h2>Video principal</h2>
       <div class="video-wrapper">
         <div class="youtube-container">
-          <iframe 
-            src="https://www.youtube.com/embed/pLulbVEivPY" 
-            title="Sí mira arriba - campaña climática" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
+          <iframe src="https://www.youtube.com/embed/CV5KdF5DEf0" title="Sí mira arriba" allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-    <section class="acciones" id="acciones">
+    <!-- Acciones -->
+    <section id="acciones">
       <h2>5 acciones por el planeta</h2>
       <ul class="acciones-list">
+        <li>♻️ Recicla tus residuos</li>
+        <li>🚶‍♂️ Camina o usa bicicleta</li>
         <li>🌱 Planta un árbol</li>
-        <li>♻️ Reduce tu consumo</li>
-        <li>🧃 Reutiliza y recicla</li>
-        <li>📢 Informa a otros</li>
-        <li>💪 Participa en acciones locales</li>
+        <li>💡 Ahorra energía</li>
+        <li>🚿 Reduce tu consumo de agua</li>
       </ul>
     </section>
 
-    <section class="contacto" id="contacto">
-      <h2>📬 Contáctanos</h2>
-      <p>¿Quieres sumarte o aportar a la campaña? Escríbenos.</p>
-      <form action="https://formspree.io/f/yourID" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Escribe tu mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </section>
-
   </main>
 
-  <footer>
-    <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
-    <p>#SíMiraArriba</p>
-  </footer>
-
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/51999999999" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
-    💬
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/51999999999" target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sí mira arriba — Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
