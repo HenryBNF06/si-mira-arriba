@@ -1,4 +1,4 @@
-/* -------- GENERAL -------- */
+/* ----------- GLOBAL RESET ----------- */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #ffffff;
-  background: #0a0a0a;
+  background-color: #0a0a0a;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -19,23 +19,23 @@ ul {
   list-style: none;
 }
 
-/* -------- NAVBAR -------- */
+/* ----------- NAVBAR ----------- */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10, 10, 10, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   z-index: 1000;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 }
 .nav-logo {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #00d084;
+  color: #4caf50;
 }
 .nav-links {
   display: flex;
@@ -43,28 +43,27 @@ ul {
 }
 .nav-links a {
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 .nav-links a:hover {
-  color: #28a745;
+  color: #a8dadc;
 }
 
-/* -------- HERO -------- */
+/* ----------- HERO ----------- */
 .hero {
-  background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
+  text-align: center;
   padding: 2rem;
 }
 .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
   z-index: 0;
 }
 .hero-content {
@@ -72,38 +71,38 @@ ul {
   max-width: 800px;
 }
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.2rem;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  color: #f1f1e6;
   margin-bottom: 2rem;
-  color: #f0f0f0;
 }
 .btn {
-  background-color: #28a745;
+  background-color: #4caf50;
   color: #fff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 30px;
   font-weight: 600;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: #1e7e34;
+  background-color: #3c8d40;
 }
 
-/* -------- SECTIONS -------- */
+/* ----------- SECTIONS ----------- */
 main section {
-  padding: 4rem 2rem;
-  max-width: 900px;
+  padding: 5rem 2rem;
+  max-width: 960px;
   margin: auto;
   text-align: center;
 }
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 section p,
 .acciones-list li {
@@ -111,13 +110,14 @@ section p,
   color: #ddd;
 }
 .acciones-list {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   text-align: left;
   display: grid;
-  gap: 0.75rem;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-/* -------- VIDEO -------- */
+/* ----------- VIDEO ----------- */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -126,19 +126,22 @@ section p,
 iframe {
   border-radius: 12px;
   max-width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border: none;
 }
 
-/* -------- WHATSAPP BUTTON -------- */
+/* ----------- WHATSAPP BUTTON ----------- */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 999;
   background-color: #25d366;
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 .whatsapp-button:hover {
   transform: scale(1.1);
@@ -148,7 +151,7 @@ iframe {
   height: 40px;
 }
 
-/* -------- FOOTER -------- */
+/* ----------- FOOTER ----------- */
 footer {
   background-color: #111;
   padding: 2rem;
@@ -157,7 +160,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* -------- RESPONSIVE -------- */
+/* ----------- RESPONSIVE ----------- */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -171,5 +174,8 @@ footer {
   .btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
+  }
+  .acciones-list {
+    padding: 0;
   }
 }
