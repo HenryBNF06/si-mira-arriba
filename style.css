@@ -8,8 +8,8 @@
 html, body {
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background: #f8fafc;
-  color: #1a1a1a;
+  background: #0d1b2a;
+  color: #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -85,12 +85,12 @@ section {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #0e3c59;
+  color: #ffffff;
 }
 
 p {
   font-size: 1.1rem;
-  color: #333;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -112,23 +112,25 @@ p {
 }
 
 .acciones-list li {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
   padding: 1rem 1.5rem;
   border-radius: 10px;
   font-weight: 500;
   font-size: 1.1rem;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  color: #ffffff;
   transition: transform 0.3s ease;
 }
 
 .acciones-list li:hover {
   transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer */
 footer {
   background: #0e3c59;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.95rem;
