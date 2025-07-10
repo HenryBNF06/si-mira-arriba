@@ -39,25 +39,56 @@ html, body {
 }
 
 .nav-links li a {
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #2ecc71;
+  background: #2ecc71;
+  color: #fff;
 }
 
 .menu-icon {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
   cursor: pointer;
 }
 
 #menu-toggle {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Hero */
@@ -228,7 +259,6 @@ p {
   height: 40px;
 }
 
-
 /* Footer */
 footer {
   background: #0e3c59;
@@ -238,5 +268,3 @@ footer {
   font-size: 0.95rem;
   line-height: 1.5;
 }
-
-
