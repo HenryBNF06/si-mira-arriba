@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sí mira arriba</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -15,58 +13,48 @@
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Sí mira arriba 🌍</h1>
-      <p>No ignores el cielo. Actúa por el planeta.</p>
-      <a href="#video" class="btn">Ver Video</a>
+      <p>Una mirada al cielo, una llamada a la acción climática.</p>
+      <a href="#video" class="btn">Ver video</a>
     </div>
-    <svg class="wave" viewBox="0 0 1440 320">
-      <path fill="#f0f4f8" d="M0,224L1440,160L1440,320L0,320Z"></path>
-    </svg>
   </header>
 
-  <section class="about" id="about">
-    <h2>¿Por qué mirar arriba?</h2>
-    <p>
-      Inspirada en la película <em>Don't Look Up</em>, esta campaña nos invita a dejar la indiferencia. El cielo refleja una emergencia climática que no podemos seguir ignorando. Es hora de mirar arriba, y actuar.
-    </p>
-  </section>
+  <main>
 
-  <section class="video" id="video">
-    <h2>🎥 Video de la campaña</h2>
-    <div class="video-wrapper">
-      <!-- Sustituye con tu enlace real de TikTok -->
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@scottdennison/video/7213142791179640070" data-video-id="7213142791179640070" style="max-width: 400px;">
-        <section></section>
-      </blockquote>
-      <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
-  </section>
+    <section class="about">
+      <h2>¿Por qué mirar arriba?</h2>
+      <p>
+        Inspirada en <em>Don't Look Up</em>, esta campaña busca despertar conciencia sobre la crisis climática. 
+        Mientras muchos prefieren ignorar el problema, nosotros elegimos mirar arriba y actuar por el futuro del planeta.
+      </p>
+    </section>
 
-  <section class="acciones">
-    <h2>5 acciones por el planeta</h2>
-    <div class="grid">
-      <div class="card">🌱<span>Planta</span></div>
-      <div class="card">♻️<span>Reduce</span></div>
-      <div class="card">🧃<span>Reutiliza</span></div>
-      <div class="card">📢<span>Habla</span></div>
-      <div class="card">💪<span>Actúa</span></div>
-    </div>
-    <a href="#" class="btn secondary">Comparte esta idea</a>
-  </section>
+    <section class="video" id="video">
+      <h2>🎥 Video de la campaña</h2>
+      <div class="video-wrapper">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@scottdennison/video/7213142791179640070" data-video-id="7213142791179640070" style="max-width: 400px;">
+          <section></section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+    </section>
+
+    <section class="acciones">
+      <h2>5 acciones por el planeta</h2>
+      <ul class="acciones-list">
+        <li>🌱 Planta un árbol</li>
+        <li>♻️ Reduce tu consumo</li>
+        <li>🧃 Reutiliza y recicla</li>
+        <li>📢 Informa a otros</li>
+        <li>💪 Participa en acciones locales</li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
-    <p>🌍 Campaña “Sí mira arriba” | Desarrollo Sostenible 2025</p>
+    <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
     <p>#SíMiraArriba</p>
   </footer>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal().reveal('.hero-content, .about, .video-wrapper, .card, footer', {
-      delay: 200,
-      distance: '40px',
-      duration: 1000,
-      origin: 'bottom',
-      interval: 100
-    });
-  </script>
 </body>
 </html>
