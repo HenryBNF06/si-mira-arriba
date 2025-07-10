@@ -6,7 +6,7 @@
   <title>Sí mira arriba</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-
+  
   <!-- META para compartir -->
   <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
   <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
@@ -16,30 +16,29 @@
 </head>
 <body>
 
-  <!-- ENCABEZADO CON MENÚ -->
+  <!-- Menú de navegación -->
   <nav class="navbar">
     <div class="nav-logo">🌍 Sí mira arriba</div>
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#por-que">¿Por qué?</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#acciones">Acciones</a></li>
-    </ul>
+    <div class="nav-links">
+      <a href="#video">Video</a>
+      <a href="#acciones">Acciones</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero" id="inicio">
+  <!-- Encabezado principal -->
+  <header class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1>Sí mira arriba 🌍</h1>
+      <h1>Sí mira arriba</h1>
       <p>El futuro está en el aire… y en tus manos.</p>
       <a href="#video" class="btn">Ver video</a>
     </div>
   </header>
 
-  <!-- SECCIÓN: POR QUÉ -->
   <main>
-    <section class="about" id="por-que">
+
+    <section class="about">
       <h2>¿Por qué mirar arriba?</h2>
       <p>
         Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática. 
@@ -47,23 +46,20 @@
       </p>
     </section>
 
-    <!-- SECCIÓN: VIDEO -->
     <section class="video" id="video">
       <h2>🎥 Video de la campaña</h2>
       <div class="video-wrapper">
         <iframe 
-          width="360" 
-          height="640" 
           src="https://www.youtube.com/embed/pLulbVEivPY" 
-          title="Sí mira arriba - campaña climática" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          title="Sí mira arriba - campaña climática"
+          width="360" height="640"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
     </section>
 
-    <!-- SECCIÓN: ACCIONES -->
     <section class="acciones" id="acciones">
       <h2>5 acciones por el planeta</h2>
       <ul class="acciones-list">
@@ -74,18 +70,24 @@
         <li>💪 Participa en acciones locales</li>
       </ul>
     </section>
+
+    <section class="contacto" id="contacto">
+      <h2>¿Te sumas al cambio?</h2>
+      <p>Comparte esta campaña o escríbenos por WhatsApp para colaborar.</p>
+      <a href="https://wa.me/51999999999" class="btn">Escríbenos</a>
+    </section>
+
   </main>
 
-  <!-- BOTÓN WHATSAPP -->
-  <a href="https://wa.me/51999999999" class="whatsapp-button" target="_blank" title="Contáctanos por WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-  </a>
-
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
     <p>#SíMiraArriba</p>
   </footer>
+
+  <!-- Botón de WhatsApp flotante -->
+  <a href="https://wa.me/51999999999" class="whatsapp-button" target="_blank" aria-label="Escríbenos por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
 
 </body>
 </html>
