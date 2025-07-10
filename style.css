@@ -36,7 +36,6 @@ html, body {
 .hero-content {
   position: relative;
   z-index: 2;
-  color: #fff;
   background: rgba(0, 0, 0, 0.6);
   padding: 2.5rem 3rem;
   border-radius: 12px;
@@ -47,12 +46,14 @@ html, body {
   font-size: 3.2rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 1.8rem;
   line-height: 1.5;
+  color: #fff;
 }
 
 .btn {
@@ -170,6 +171,7 @@ footer {
 
   .youtube-container {
     width: 100%;
-    height: 500px;
+    height: auto;
+    aspect-ratio: 9 / 16;
   }
 }
