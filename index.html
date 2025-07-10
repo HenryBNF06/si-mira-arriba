@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Navbar fija -->
   <nav class="navbar">
     <div class="logo">🌍 Sí mira arriba</div>
     <input type="checkbox" id="menu-toggle" />
@@ -39,62 +39,63 @@
     </div>
   </section>
 
-    <!-- ¿Por qué mirar arriba? -->
-    <section id="about" class="about">
-      <h2>¿Por qué mirar arriba?</h2>
-      <p>
-        Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática.
-        Mientras muchos prefieren ignorar el problema, nosotros elegimos mirar arriba y actuar por el futuro del planeta.
-      </p>
-    </section>
+  <!-- ¿Por qué mirar arriba? -->
+  <section id="about" class="about">
+    <h2>¿Por qué mirar arriba?</h2>
+    <p>
+      Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática.
+      Mientras muchos prefieren ignorar el problema, nosotros elegimos mirar arriba y actuar por el futuro del planeta.
+    </p>
+  </section>
 
-  
-  <main>
-    <!-- Video -->
-    <section id="video">
-      <h2>Video de la campaña</h2>
-      <div class="video-wrapper">
-        <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/pLulbVEivPY" title="Sí mira arriba" allowfullscreen></iframe>
-        </div>
+  <!-- Video -->
+  <section id="video">
+    <h2>Video de la campaña</h2>
+    <div class="video-wrapper">
+      <div class="youtube-container">
+        <iframe src="https://www.youtube.com/embed/pLulbVEivPY" title="Sí mira arriba" allowfullscreen></iframe>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- ¿Quiénes somos? -->
+  <section id="quienes-somos" class="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Somos estudiantes de la Universidad Nacional Tecnológica de Lima Sur comprometidos con el desarrollo sostenible.
+      Esta campaña representa nuestro esfuerzo por generar conciencia ambiental y promover acciones concretas frente al cambio climático.
+      Creemos que el cambio comienza con la información, la empatía y la acción colectiva.
+    </p>
+  </section>
 
+  <!-- Acciones -->
+  <section id="acciones">
+    <h2>5 acciones por el planeta</h2>
+    <ul class="acciones-list">
+      <li>♻️ Recicla tus residuos</li>
+      <li>🚶‍♂️ Camina o usa bicicleta</li>
+      <li>🌱 Planta un árbol</li>
+      <li>💡 Ahorra energía</li>
+      <li>🚿 Reduce tu consumo de agua</li>
+    </ul>
+  </section>
 
-    <!-- ¿Quiénes somos? -->
-    <section id="quienes-somos" class="quienes-somos">
-      <h2>¿Quiénes somos?</h2>
-      <p>
-        Somos estudiantes de la Universidad Nacional Tecnológica de Lima Sur comprometidos con el desarrollo sostenible.
-        Esta campaña representa nuestro esfuerzo por generar conciencia ambiental y promover acciones concretas frente al cambio climático.
-        Creemos que el cambio comienza con la información, la empatía y la acción colectiva.
-      </p>
-    </section>
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/mayvpqyw" method="POST">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" placeholder="Tu nombre" required />
 
-    <!-- Acciones -->
-    <section id="acciones">
-      <h2>5 acciones por el planeta</h2>
-      <ul class="acciones-list">
-        <li>♻️ Recicla tus residuos</li>
-        <li>🚶‍♂️ Camina o usa bicicleta</li>
-        <li>🌱 Planta un árbol</li>
-        <li>💡 Ahorra energía</li>
-        <li>🚿 Reduce tu consumo de agua</li>
-      </ul>
-    </section>
+      <label for="email">Correo</label>
+      <input id="email" name="email" type="email" placeholder="Tu correo" required />
 
-    <!-- Contacto -->
-    <section id="contacto" class="contacto">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
-        <textarea placeholder="Escribe tu mensaje" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </section>
-  </main>
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
 
   <!-- Botón de WhatsApp -->
   <a href="https://wa.me/51999999999" target="_blank" class="whatsapp-button">
