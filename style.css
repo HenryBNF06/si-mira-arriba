@@ -212,16 +212,6 @@ p {
   min-height: 120px;
 }
 
-/* Footer */
-footer {
-  background: #0e3c59;
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
 /* WHATSAPP */
 .whatsapp-button {
   position: fixed;
@@ -237,3 +227,16 @@ footer {
   width: 40px;
   height: 40px;
 }
+
+
+/* Footer */
+footer {
+  background: #0e3c59;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
