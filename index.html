@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- META para vista previa al compartir -->
+  <!-- META para compartir -->
   <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
   <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
   <meta property="og:image" content="https://www.shutterstock.com/image-vector/girl-hugs-planet-earth-love-600nw-1952231440.jpg" />
@@ -16,7 +16,19 @@
 </head>
 <body>
 
-  <header class="hero">
+  <!-- ENCABEZADO CON MENÚ -->
+  <nav class="navbar">
+    <div class="nav-logo">🌍 Sí mira arriba</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#por-que">¿Por qué?</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#acciones">Acciones</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Sí mira arriba 🌍</h1>
@@ -25,9 +37,9 @@
     </div>
   </header>
 
+  <!-- SECCIÓN: POR QUÉ -->
   <main>
-
-    <section class="about">
+    <section class="about" id="por-que">
       <h2>¿Por qué mirar arriba?</h2>
       <p>
         Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática. 
@@ -35,24 +47,24 @@
       </p>
     </section>
 
+    <!-- SECCIÓN: VIDEO -->
     <section class="video" id="video">
       <h2>🎥 Video de la campaña</h2>
       <div class="video-wrapper">
-        <div class="youtube-container">
-          <iframe 
-            width="360" 
-            height="640" 
-            src="https://www.youtube.com/embed/pLulbVEivPY" 
-            title="Sí mira arriba - campaña climática" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
+        <iframe 
+          width="360" 
+          height="640" 
+          src="https://www.youtube.com/embed/pLulbVEivPY" 
+          title="Sí mira arriba - campaña climática" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
 
-    <section class="acciones">
+    <!-- SECCIÓN: ACCIONES -->
+    <section class="acciones" id="acciones">
       <h2>5 acciones por el planeta</h2>
       <ul class="acciones-list">
         <li>🌱 Planta un árbol</li>
@@ -62,9 +74,14 @@
         <li>💪 Participa en acciones locales</li>
       </ul>
     </section>
-
   </main>
 
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/51999999999" class="whatsapp-button" target="_blank" title="Contáctanos por WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
     <p>#SíMiraArriba</p>
