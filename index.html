@@ -6,8 +6,7 @@
   <title>Sí mira arriba</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- META para vista previa -->
+  <!-- Meta -->
   <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
   <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
   <meta property="og:image" content="https://www.shutterstock.com/image-vector/girl-hugs-planet-earth-love-600nw-1952231440.jpg" />
@@ -22,9 +21,9 @@
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="nav-links">
-        <li><a href="#video">Video</a></li>
-        <li><a href="#acciones">Acciones</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#video" class="nav-btn">🎥 Video</a></li>
+        <li><a href="#acciones" class="nav-btn">🌿 Acciones</a></li>
+        <li><a href="#contacto" class="nav-btn">📬 Contacto</a></li>
       </ul>
     </nav>
     <div class="overlay"></div>
@@ -74,10 +73,10 @@
     <section class="contacto" id="contacto">
       <h2>📬 Contáctanos</h2>
       <p>¿Quieres sumarte o aportar a la campaña? Escríbenos.</p>
-      <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo" required>
-        <textarea placeholder="Tu mensaje" required></textarea>
+      <form action="https://formspree.io/f/yourID" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </section>
@@ -89,9 +88,9 @@
     <p>#SíMiraArriba</p>
   </footer>
 
-  <!-- Botón flotante de WhatsApp -->
-  <a class="whatsapp-button" href="https://wa.me/51999999999" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/51999999999" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
+    💬
   </a>
 
 </body>
