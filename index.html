@@ -16,21 +16,10 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-logo">🌍 Sí mira arriba</div>
-    <div class="nav-toggle" id="navToggle">&#9776;</div>
-    <ul class="nav-links" id="navMenu">
-      <li><a href="#video">Video</a></li>
-      <li><a href="#acciones">Acciones</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
   <header class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1>Sí mira arriba 🌱</h1>
+      <h1>Sí mira arriba 🌍</h1>
       <p>El futuro está en el aire… y en tus manos.</p>
       <a href="#video" class="btn">Ver video</a>
     </div>
@@ -38,7 +27,6 @@
 
   <main>
 
-    <!-- SOBRE LA CAMPAÑA -->
     <section class="about">
       <h2>¿Por qué mirar arriba?</h2>
       <p>
@@ -47,25 +35,27 @@
       </p>
     </section>
 
-    <!-- VIDEO -->
     <section class="video" id="video">
       <h2>🎥 Video de la campaña</h2>
       <div class="video-wrapper">
-        <iframe 
-          src="https://www.youtube.com/embed/pLulbVEivPY" 
-          title="Sí mira arriba - campaña climática" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+        <div class="youtube-container">
+          <iframe 
+            width="360" 
+            height="640" 
+            src="https://www.youtube.com/embed/pLulbVEivPY" 
+            title="Sí mira arriba - campaña climática" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
 
-    <!-- ACCIONES -->
-    <section class="acciones" id="acciones">
+    <section class="acciones">
       <h2>5 acciones por el planeta</h2>
       <ul class="acciones-list">
-        <li>🌳 Planta un árbol</li>
+        <li>🌱 Planta un árbol</li>
         <li>♻️ Reduce tu consumo</li>
         <li>🧃 Reutiliza y recicla</li>
         <li>📢 Informa a otros</li>
@@ -75,25 +65,10 @@
 
   </main>
 
-  <!-- WHATSAPP -->
-  <a class="whatsapp-button" href="https://wa.me/51999999999" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
     <p>#SíMiraArriba</p>
   </footer>
-
-  <!-- MENU SCRIPT -->
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-  </script>
 
 </body>
 </html>
