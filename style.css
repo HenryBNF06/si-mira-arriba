@@ -220,6 +220,34 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Secciones extra */
+.about,
+.quienes-somos {
+  background-color: #1b263b;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #ffffff;
+  text-align: center;
+}
+
+.about h2,
+.quienes-somos h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2ecc71;
+}
+
+.about p,
+.quienes-somos p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+  color: #e0e0e0;
+}
+
 /* Contacto */
 .contacto form {
   display: flex;
