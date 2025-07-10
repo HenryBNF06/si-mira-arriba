@@ -95,10 +95,20 @@ p {
 }
 
 .video-wrapper {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
+
+.video-wrapper blockquote {
+  width: 360px !important;
+  height: 640px !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  background: #000;
+}
+
 
 /* Acciones */
 .acciones-list {
