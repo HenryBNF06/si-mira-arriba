@@ -222,16 +222,18 @@ footer {
   line-height: 1.5;
 }
 
-/* WhatsApp botón */
-.whatsapp-btn {
+/* WHATSAPP */
+.whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.75rem 1rem;
+  background-color: #25d366;
+  padding: 12px;
   border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-decorati
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 999;
+}
+.whatsapp-button img {
+  width: 40px;
+  height: 40px;
+}
