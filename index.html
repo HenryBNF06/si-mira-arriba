@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- META para vista previa al compartir -->
+  <!-- META para vista previa -->
   <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
   <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
   <meta property="og:image" content="https://www.shutterstock.com/image-vector/girl-hugs-planet-earth-love-600nw-1952231440.jpg" />
@@ -17,6 +17,16 @@
 <body>
 
   <header class="hero">
+    <nav class="navbar">
+      <div class="logo">🌍 Sí mira arriba</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#video">Video</a></li>
+        <li><a href="#acciones">Acciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Sí mira arriba 🌍</h1>
@@ -40,8 +50,6 @@
       <div class="video-wrapper">
         <div class="youtube-container">
           <iframe 
-            width="360" 
-            height="640" 
             src="https://www.youtube.com/embed/pLulbVEivPY" 
             title="Sí mira arriba - campaña climática" 
             frameborder="0" 
@@ -52,7 +60,7 @@
       </div>
     </section>
 
-    <section class="acciones">
+    <section class="acciones" id="acciones">
       <h2>5 acciones por el planeta</h2>
       <ul class="acciones-list">
         <li>🌱 Planta un árbol</li>
@@ -63,12 +71,28 @@
       </ul>
     </section>
 
+    <section class="contacto" id="contacto">
+      <h2>📬 Contáctanos</h2>
+      <p>¿Quieres sumarte o aportar a la campaña? Escríbenos.</p>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+
   </main>
 
   <footer>
     <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
     <p>#SíMiraArriba</p>
   </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51999999999" class="whatsapp-btn" target="_blank" title="Contáctanos por WhatsApp">
+    💬
+  </a>
 
 </body>
 </html>
