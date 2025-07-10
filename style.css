@@ -13,7 +13,54 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Hero section */
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #2ecc71;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hero */
 .hero {
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
   position: relative;
@@ -71,7 +118,7 @@ html, body {
   background: #27ae60;
 }
 
-/* Main sections */
+/* Main */
 main {
   padding: 3.5rem 1.5rem;
   max-width: 900px;
@@ -95,7 +142,7 @@ p {
   line-height: 1.6;
 }
 
-/* YouTube video wrapper */
+/* Video */
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -125,23 +172,44 @@ p {
   justify-content: center;
   gap: 1.2rem;
   margin-top: 2rem;
-  padding: 0;
 }
 
 .acciones-list li {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #ffffff;
-  transition: transform 0.3s ease;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .acciones-list li:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Contacto */
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contacto textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 /* Footer */
@@ -154,24 +222,16 @@ footer {
   line-height: 1.5;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .acciones-list li {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
-  }
-
-  .youtube-container {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 9 / 16;
-  }
-}
+/* WhatsApp botón */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decorati
