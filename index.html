@@ -2,72 +2,64 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sí mira arriba</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Sí mira arriba – Acción Climática</title>
 
-  <!-- META para vista previa al compartir -->
-  <meta property="og:title" content="Sí mira arriba – Campaña de acción climática" />
-  <meta property="og:description" content="Una campaña inspirada en 'No mires arriba' para despertar conciencia sobre el cambio climático. ¡Actúa hoy!" />
-  <meta property="og:image" content="https://www.shutterstock.com/image-vector/girl-hugs-planet-earth-love-600nw-1952231440.jpg" />
-  <meta property="og:url" content="https://si-mira-arriba.vercel.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Open Graph & SEO -->
+  <meta name="description" content="Campaña 'Sí mira arriba' – acción climática inspirada en Don’t Look Up. Actúa por el futuro del planeta."/>
+  <meta property="og:title" content="Sí mira arriba – Acción Climática"/>
+  <meta property="og:description" content="Inspírate y únete a nuestra campaña para actuar frente a la crisis climática. ¡Mira arriba!"/>
+  <meta property="og:image" content="https://i.imgur.com/z9XcdVX.jpg"/>
+  <meta property="og:url" content="https://tusitio.vercel.app/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
 </head>
 <body>
 
   <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
+    <div class="hero-overlay"></div>
+    <div class="container">
       <h1>Sí mira arriba 🌍</h1>
-      <p>El futuro está en el aire… y en tus manos.</p>
-      <a href="#video" class="btn">Ver video</a>
+      <p class="subtitle">Tu mirada al cielo es el primer paso para cambiar el planeta.</p>
+      <a href="#video" class="btn-primary">Ver Video</a>
     </div>
   </header>
 
   <main>
-
-    <section class="about">
+    <section class="about container">
       <h2>¿Por qué mirar arriba?</h2>
-      <p>
-        Inspirada en la película <em>No miren arriba</em>, esta campaña busca despertar conciencia sobre la crisis climática. 
-        Mientras muchos prefieren ignorar el problema, nosotros elegimos mirar arriba y actuar por el futuro del planeta.
-      </p>
+      <p>Inspirada en <em>Don’t Look Up</em>, esta campaña rompe la inercia social y nos impulsa a la acción climática. Es momento de conectar con los mensajes del cielo y actuar responsablemente.</p>
     </section>
 
-    <section class="video" id="video">
-      <h2>🎥 Video de la campaña</h2>
-      <div class="video-wrapper">
-        <div class="youtube-container">
-          <iframe 
-            width="360" 
-            height="640" 
-            src="https://www.youtube.com/shorts/pLulbVEivPY" 
-            title="Sí mira arriba - campaña climática" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
+    <section class="video container" id="video">
+      <h2>🎥 Nuestro mensaje</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/pLulbVEivPY" title="Sí mira arriba" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section class="acciones">
-      <h2>5 acciones por el planeta</h2>
-      <ul class="acciones-list">
-        <li>🌱 Planta un árbol</li>
-        <li>♻️ Reduce tu consumo</li>
-        <li>🧃 Reutiliza y recicla</li>
-        <li>📢 Informa a otros</li>
-        <li>💪 Participa en acciones locales</li>
+    <section class="actions container">
+      <h2>5 acciones 🌱</h2>
+      <ul class="action-list">
+        <li>Planta un árbol</li>
+        <li>Reduce tu consumo</li>
+        <li>Reutiliza y recicla</li>
+        <li>Comparte el mensaje</li>
+        <li>Únete a iniciativas locales</li>
       </ul>
+      <a href="#" class="btn-secondary">Compártelo ahora</a>
     </section>
-
   </main>
 
   <footer>
-    <p>© 2025 Campaña “Sí mira arriba” — Desarrollo Sostenible</p>
-    <p>#SíMiraArriba</p>
+    <div class="footer-container">
+      <p>© 2025 “Sí mira arriba” – Curso Desarrollo Sostenible</p>
+      <p class="hashtag">#SíMiraArriba</p>
+    </div>
   </footer>
 
 </body>
